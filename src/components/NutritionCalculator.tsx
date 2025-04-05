@@ -22,7 +22,8 @@ import {
   Candy,
   WheatOff,
   Cherry,
-  LucideProps
+  LucideProps,
+  LucideIcon
 } from 'lucide-react';
 import {
   Tooltip,
@@ -41,13 +42,14 @@ interface NutritionIconProps extends LucideProps {
   label: string;
   value: string | number;
   tooltip: string;
+  Icon: LucideIcon;  // Changed from 'icon' to 'Icon' and properly typed
 }
 
 const NutritionIcon: React.FC<NutritionIconProps> = ({ 
   label, 
   value, 
   tooltip, 
-  icon: Icon, 
+  Icon,  // Use 'Icon' instead of 'icon'
   ...props 
 }) => {
   return (
@@ -420,42 +422,42 @@ const NutritionCalculator: React.FC<NutritionCalculatorProps> = ({ initialItemId
                   <TabsContent value="summary">
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                       <NutritionIcon 
-                        icon={Flame} 
+                        Icon={Flame} 
                         label="Calories" 
                         value={calculatedNutrition.calories}
                         tooltip={`${getPercentageOfDaily(calculatedNutrition.calories, 'calories')}% of daily recommended intake (2000 calories)`}
                       />
                       
                       <NutritionIcon 
-                        icon={HeartPulse} 
+                        Icon={HeartPulse} 
                         label="Total Fat" 
                         value={`${calculatedNutrition.totalFat}g`}
                         tooltip={`${getPercentageOfDaily(calculatedNutrition.totalFat, 'totalFat')}% of daily recommended intake (65g)`}
                       />
                       
                       <NutritionIcon 
-                        icon={WheatOff} 
+                        Icon={WheatOff} 
                         label="Total Carbs" 
                         value={`${calculatedNutrition.totalCarbs}g`}
                         tooltip={`${getPercentageOfDaily(calculatedNutrition.totalCarbs, 'totalCarbs')}% of daily recommended intake (300g)`}
                       />
                       
                       <NutritionIcon 
-                        icon={Candy} 
+                        Icon={Candy} 
                         label="Sugars" 
                         value={`${calculatedNutrition.sugars}g`}
                         tooltip={`${getPercentageOfDaily(calculatedNutrition.sugars, 'sugars')}% of daily recommended intake (50g)`}
                       />
                       
                       <NutritionIcon 
-                        icon={Droplets} 
+                        Icon={Droplets} 
                         label="Protein" 
                         value={`${calculatedNutrition.protein}g`}
                         tooltip={`${getPercentageOfDaily(calculatedNutrition.protein, 'protein')}% of daily recommended intake (50g)`}
                       />
                       
                       <NutritionIcon 
-                        icon={Coffee} 
+                        Icon={Coffee} 
                         label="Caffeine" 
                         value={`${calculatedNutrition.caffeine}mg`}
                         tooltip={`${getPercentageOfDaily(calculatedNutrition.caffeine, 'caffeine')}% of daily recommended intake (400mg)`}
