@@ -23,7 +23,7 @@ const Disclaimer = () => {
       <div className="prose prose-green max-w-none">
         <h2>General Information Disclaimer</h2>
         <p>
-          The information contained on the Starbucks Nutrition Finder website is for general information purposes only.
+          The information contained on the Starbucks Nutrition Calculator website is for general information purposes only.
           We make no representations or warranties of any kind, express or implied, about the completeness, accuracy,
           reliability, suitability, or availability of the information, products, services, or related graphics contained
           on this website for any purpose.
@@ -31,7 +31,7 @@ const Disclaimer = () => {
 
         <h2>Non-Affiliation with Starbucks</h2>
         <p>
-          <strong>Starbucks Nutrition Finder is not affiliated with, endorsed by, or connected to Starbucks Corporation in any way.</strong>
+          <strong>Starbucks Nutrition Calculator is not affiliated with, endorsed by, or connected to Starbucks Corporation in any way.</strong>
           All Starbucks product names, logos, and brands are property of Starbucks Corporation. All company, product, and service
           names used on this website are for identification purposes only.
         </p>
@@ -78,12 +78,12 @@ const Disclaimer = () => {
 
         <h2>Limitation of Liability</h2>
         <p>
-          In no event will Starbucks Nutrition Finder be liable for any loss or damage including without limitation,
+          In no event will Starbucks Nutrition Calculator be liable for any loss or damage including without limitation,
           indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits
           arising out of, or in connection with, the use of this website.
         </p>
         <p>
-          Through this website, you may link to other websites which are not under the control of Starbucks Nutrition Finder.
+          Through this website, you may link to other websites which are not under the control of Starbucks Nutrition Calculator.
           We have no control over the nature, content, and availability of those sites. The inclusion of any links does not
           necessarily imply a recommendation or endorsement of the views expressed within them.
         </p>
@@ -99,7 +99,7 @@ const Disclaimer = () => {
           If you have any questions or concerns about this disclaimer, please contact us at:
         </p>
         <p className="ml-4">
-          Email: info@starbucksnutritionfinder.com<br />
+          Email: info@starbucks-nutrition-calculator.com<br />
           Address: 123 Coffee Lane, Seattle, WA 98101
         </p>
       </div>

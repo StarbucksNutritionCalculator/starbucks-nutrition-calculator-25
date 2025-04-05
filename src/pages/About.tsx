@@ -18,7 +18,7 @@ const About = () => {
           <div className="prose prose-green max-w-none">
             <h2>Our Mission</h2>
             <p>
-              At Starbucks Nutrition Finder, our mission is to empower consumers with accurate, accessible information about the nutritional content of Starbucks menu items. We believe that making informed choices starts with having clear information.
+              At Starbucks Nutrition Calculator, our mission is to empower consumers with accurate, accessible information about the nutritional content of Starbucks menu items. We believe that making informed choices starts with having clear information.
             </p>
             
             <p>
@@ -151,54 +151,6 @@ const About = () => {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="bg-starbucks-cream rounded-lg p-8 mb-12">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
-            SEO Information for Website Owners
-          </h2>
-          
-          <div className="prose prose-green max-w-none">
-            <p>
-              This section is specifically for website administrators and SEO professionals who maintain this website.
-            </p>
-            
-            <h3>Key SEO Elements</h3>
-            <ul>
-              <li>
-                <strong>Target Keywords:</strong> 'Starbucks nutrition calculator', 'Starbucks calories', 'Starbucks nutrition information', 'Starbucks menu nutrition', 'customize Starbucks nutrition'
-              </li>
-              <li>
-                <strong>Meta Description:</strong> "Use our Starbucks Nutrition Calculator to find calories, sugar, fat, and other nutrients in your favorite Starbucks drinks and food. Customize options to match your order."
-              </li>
-              <li>
-                <strong>Content Strategy:</strong> Regular updates with seasonal menu items, detailed nutritional guides, and expert advice on making healthier Starbucks choices.
-              </li>
-              <li>
-                <strong>Schema Markup:</strong> Implemented NutritionInformation schema on individual menu item pages and FAQPage schema on the FAQ section.
-              </li>
-            </ul>
-            
-            <h3>Technical SEO Considerations</h3>
-            <ul>
-              <li>Optimize page load speed by compressing images and implementing lazy loading</li>
-              <li>Ensure mobile responsiveness across all device types</li>
-              <li>Implement proper header hierarchy and semantic HTML5 elements</li>
-              <li>Create a comprehensive XML sitemap and submit to search engines</li>
-              <li>Use descriptive URLs that include target keywords where appropriate</li>
-            </ul>
-            
-            <h3>Content Development Guidelines</h3>
-            <ul>
-              <li>Maintain 1,500-2,000 words of high-quality content on key landing pages</li>
-              <li>Include nutrition-focused content that answers common user questions</li>
-              <li>Regularly update content to reflect current Starbucks menu offerings</li>
-              <li>Use proper header tags (H1, H2, H3) to organize content hierarchically</li>
-              <li>Incorporate relevant internal linking between related pages</li>
-            </ul>
           </div>
         </div>
       </div>
