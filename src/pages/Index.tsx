@@ -7,8 +7,8 @@ const Index = () => {
   const navigate = useNavigate();
   
   useEffect(() => {
-    // Redirect to Home component
-    navigate('/home', { replace: true });
+    // Redirect to Home component using hash routing
+    navigate('/#/home', { replace: true });
   }, [navigate]);
   
   // Return Home component directly in case the redirect doesn't happen immediately
