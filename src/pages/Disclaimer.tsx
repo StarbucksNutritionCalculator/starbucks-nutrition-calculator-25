@@ -1,106 +1,69 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const Disclaimer = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-3xl">
-      <div className="mb-6">
-        <Link 
-          to="/" 
-          className="inline-flex items-center text-starbucks-green hover:text-starbucks-light-green transition-colors mb-4"
-        >
-          <ArrowLeft size={16} className="mr-2" />
-          Back to Home
-        </Link>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Disclaimer</h1>
-        <p className="text-gray-600">Last updated: April 5, 2025</p>
-        <Separator className="my-4" />
-      </div>
-
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-3xl font-bold text-gray-900 mb-4">Disclaimer</h1>
+      <p className="text-gray-600 mb-6">Last updated: April 6, 2025</p>
+      
+      <Separator className="mb-6" />
+      
       <div className="prose prose-green max-w-none">
-        <h2>General Information Disclaimer</h2>
-        <p>
-          The information contained on the Starbucks Nutrition Calculator website is for general information purposes only.
-          We make no representations or warranties of any kind, express or implied, about the completeness, accuracy,
-          reliability, suitability, or availability of the information, products, services, or related graphics contained
-          on this website for any purpose.
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Not an Official Starbucks Website</h2>
+        <p className="text-gray-700 mb-4">
+          Starbucks Nutrition Calculator (starbucks-nutrition-calculator.com) is not affiliated with, authorized, endorsed by, or in any way officially connected with Starbucks Corporation, or any of its subsidiaries or affiliates. The official Starbucks website can be found at www.starbucks.com.
         </p>
-
-        <h2>Non-Affiliation with Starbucks</h2>
-        <p>
-          <strong>Starbucks Nutrition Calculator is not affiliated with, endorsed by, or connected to Starbucks Corporation in any way.</strong>
-          All Starbucks product names, logos, and brands are property of Starbucks Corporation. All company, product, and service
-          names used on this website are for identification purposes only.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Nutrition Information</h2>
+        <p className="text-gray-700 mb-4">
+          The nutrition information provided on this website is based on publicly available data and may not be completely accurate, comprehensive, or up-to-date. Starbucks may update their menu items, ingredients, or nutritional information without notice.
         </p>
-        <p>
-          For official information about Starbucks products, please visit the official 
-          <a href="https://www.starbucks.com" target="_blank" rel="noopener noreferrer" className="text-starbucks-green hover:text-starbucks-light-green mx-1">
-            Starbucks website
-          </a>
-          or consult with Starbucks staff.
+        
+        <p className="text-gray-700 mb-4">
+          We strive to provide accurate information, but there may be discrepancies between the information on this website and the actual nutritional content of Starbucks products. Nutrition values may vary based on:
         </p>
-
-        <h2>Nutritional Information Disclaimer</h2>
-        <p>
-          The nutritional information provided on this website is based on publicly available data and may not reflect
-          the most current information available from Starbucks Corporation. Starbucks menu items and ingredients may vary
-          by location and may change over time.
-        </p>
-        <p>
-          Actual nutritional content may vary based on:
-        </p>
-        <ul>
-          <li>Regional or seasonal differences in product formulations</li>
-          <li>Individual store preparation methods</li>
-          <li>Supplier variations in ingredients</li>
-          <li>Updates to Starbucks recipes that may not yet be reflected in our database</li>
+        <ul className="list-disc pl-6 mb-4 text-gray-700">
+          <li>Product preparation and serving methods</li>
+          <li>Regional or seasonal variations</li>
+          <li>Changes to recipes or ingredients</li>
+          <li>Different sizes and customization options</li>
         </ul>
-        <p>
-          <strong>
-            For the most accurate and up-to-date nutritional information, please refer to the official Starbucks website
-            or consult with Starbucks staff.
-          </strong>
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Not Medical Advice</h2>
+        <p className="text-gray-700 mb-4">
+          The information provided on this website is for general informational purposes only and is not intended as medical or nutritional advice, or as a substitute for professional medical advice, diagnosis, or treatment.
         </p>
-
-        <h2>Health Information Disclaimer</h2>
-        <p>
-          The information provided on this website is not intended as nutritional or medical advice and should not be
-          used to diagnose, treat, cure, or prevent any disease or health condition. This website does not provide
-          dietetic or nutrition counseling services.
+        
+        <p className="text-gray-700 mb-4">
+          Always seek the advice of a qualified healthcare provider with any questions you may have regarding a medical condition or dietary needs. Never disregard professional medical advice or delay in seeking it because of something you have read on this website.
         </p>
-        <p>
-          Always consult with a qualified healthcare professional before starting any diet, exercise program, or
-          dietary supplements based on the information contained on this website.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Trademarks</h2>
+        <p className="text-gray-700 mb-4">
+          The Starbucks name, logo, and related trademarks are the property of Starbucks Corporation. All other trademarks, service marks, and product names used on this website are the property of their respective owners. We acknowledge that we are not the owners of these trademarks and that we are not affiliated with the trademark owners.
         </p>
-
-        <h2>Limitation of Liability</h2>
-        <p>
-          In no event will Starbucks Nutrition Calculator be liable for any loss or damage including without limitation,
-          indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits
-          arising out of, or in connection with, the use of this website.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Limitation of Liability</h2>
+        <p className="text-gray-700 mb-4">
+          To the maximum extent permitted by applicable law, we exclude all representations, warranties, and conditions relating to our website and the use of this website. We will not be liable for any direct, indirect, or consequential loss or damage arising under this disclaimer or in connection with our website, whether arising in tort, contract, or otherwise.
         </p>
-        <p>
-          Through this website, you may link to other websites which are not under the control of Starbucks Nutrition Calculator.
-          We have no control over the nature, content, and availability of those sites. The inclusion of any links does not
-          necessarily imply a recommendation or endorsement of the views expressed within them.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Educational Purpose</h2>
+        <p className="text-gray-700 mb-4">
+          This website exists for educational purposes only, to help consumers make informed choices about nutrition at Starbucks. It is designed to provide general information about nutritional content and not as a tool for precise dietary planning or medical purposes.
         </p>
-
-        <h2>Legal Advice Disclaimer</h2>
-        <p>
-          Nothing contained on this website should be construed as legal advice. Any information provided on this website
-          is for informational purposes only and should not be taken as legal advice for any individual case or situation.
-        </p>
-
-        <h2>Contact Information</h2>
-        <p>
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Contact Us</h2>
+        <p className="text-gray-700 mb-4">
           If you have any questions or concerns about this disclaimer, please contact us at:
         </p>
-        <p className="ml-4">
-          Email: info@starbucks-nutrition-calculator.com<br />
-          Address: 123 Coffee Lane, Seattle, WA 98101
+        <p className="text-gray-700 mb-2">
+          <strong>Email:</strong> disclaimer@starbucks-nutrition-calculator.com
+        </p>
+        <p className="text-gray-700 mb-2">
+          <strong>Website:</strong> starbucks-nutrition-calculator.com
         </p>
       </div>
     </div>

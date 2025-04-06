@@ -1,123 +1,76 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-3xl">
-      <div className="mb-6">
-        <Link 
-          to="/" 
-          className="inline-flex items-center text-starbucks-green hover:text-starbucks-light-green transition-colors mb-4"
-        >
-          <ArrowLeft size={16} className="mr-2" />
-          Back to Home
-        </Link>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
-        <p className="text-gray-600">Last updated: April 5, 2025</p>
-        <Separator className="my-4" />
-      </div>
-
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-3xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+      <p className="text-gray-600 mb-6">Last updated: April 6, 2025</p>
+      
+      <Separator className="mb-6" />
+      
       <div className="prose prose-green max-w-none">
-        <h2>Introduction</h2>
-        <p>
-          At Starbucks Nutrition Finder, we respect your privacy and are committed to protecting your personal data. 
-          This privacy policy will inform you about how we look after your personal data when you visit our website
-          and tell you about your privacy rights and how the law protects you.
+        <p className="text-gray-700 mb-4">
+          At Starbucks Nutrition Calculator, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your information when you use our website.
         </p>
-
-        <h2>The Data We Collect</h2>
-        <p>
-          When you use our nutrition calculator, we do not collect any personally identifiable information.
-          The selections you make regarding menu items and customizations are processed in your browser
-          and are not stored on our servers.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Information We Collect</h2>
+        <p className="text-gray-700 mb-4">
+          We do not collect personal information unless you voluntarily provide it to us. The types of information we may collect include:
         </p>
-
-        <h3>Technical Data</h3>
-        <p>
-          We collect anonymous usage data such as:
-        </p>
-        <ul>
-          <li>IP address</li>
-          <li>Browser type and version</li>
-          <li>Time zone setting and location</li>
-          <li>Browser plug-in types and versions</li>
-          <li>Operating system and platform</li>
-          <li>Other technology on the devices you use to access this website</li>
+        <ul className="list-disc pl-6 mb-4 text-gray-700">
+          <li>Usage data such as pages visited and features used</li>
+          <li>Device information including browser type and operating system</li>
+          <li>IP address and approximate location data (country or city level only)</li>
+          <li>Cookies and similar tracking technologies</li>
         </ul>
         
-        <h2>Cookies</h2>
-        <p>
-          We use essential cookies to ensure the proper functioning of our website. These cookies are necessary
-          for the website to work and cannot be switched off in our systems.
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">How We Use Your Information</h2>
+        <p className="text-gray-700 mb-4">
+          We use the information we collect to:
         </p>
-        
-        <h3>Analytics Cookies</h3>
-        <p>
-          We use Google Analytics to collect anonymous information about how visitors use our website.
-          These cookies help us understand how visitors interact with our website, which pages are
-          popular, and identify any issues visitors may experience.
-        </p>
-        
-        <h2>How We Use Your Data</h2>
-        <p>
-          We use the data we collect to:
-        </p>
-        <ul>
-          <li>Provide, maintain, and improve our website</li>
-          <li>Understand how visitors use our website</li>
-          <li>Detect and address technical issues</li>
-          <li>Monitor and analyze usage patterns and trends</li>
+        <ul className="list-disc pl-6 mb-4 text-gray-700">
+          <li>Provide and improve our nutrition calculator service</li>
+          <li>Analyze usage patterns to enhance user experience</li>
+          <li>Diagnose technical issues and maintain security</li>
+          <li>Respond to your inquiries or feedback</li>
         </ul>
         
-        <h2>Data Sharing and Disclosure</h2>
-        <p>
-          We do not sell, trade, or otherwise transfer your data to third parties without your consent, except
-          to trusted third-party service providers who assist us in operating our website and conducting our business,
-          so long as those parties agree to keep this information confidential.
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Cookies</h2>
+        <p className="text-gray-700 mb-4">
+          Our website uses cookies to enhance your browsing experience. These cookies may store your preferences and provide us with information about how you use our website. You can control cookies through your browser settings.
         </p>
         
-        <h2>Data Security</h2>
-        <p>
-          We have implemented appropriate security measures to prevent your personal data from being accidentally
-          lost, used, or accessed in an unauthorized way, altered, or disclosed.
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Data Security</h2>
+        <p className="text-gray-700 mb-4">
+          We implement appropriate security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.
         </p>
         
-        <h2>Your Rights</h2>
-        <p>
-          Depending on your location, you may have certain rights regarding your personal data, including:
-        </p>
-        <ul>
-          <li>The right to access your personal data</li>
-          <li>The right to request correction of your personal data</li>
-          <li>The right to request erasure of your personal data</li>
-          <li>The right to restrict processing of your personal data</li>
-          <li>The right to data portability</li>
-          <li>The right to object to processing of your personal data</li>
-        </ul>
-        
-        <h2>Children's Privacy</h2>
-        <p>
-          Our website is not intended for children under the age of 13. We do not knowingly collect personal data
-          from children under 13. If you are a parent or guardian and you believe your child has provided us with
-          personal data, please contact us.
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Third-Party Services</h2>
+        <p className="text-gray-700 mb-4">
+          Our website may use third-party services such as analytics providers and hosting services. These third parties may have access to your information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.
         </p>
         
-        <h2>Changes to This Privacy Policy</h2>
-        <p>
-          We may update our privacy policy from time to time. We will notify you of any changes by posting the
-          new privacy policy on this page and updating the "last updated" date.
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Children's Privacy</h2>
+        <p className="text-gray-700 mb-4">
+          Our service is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will promptly delete it.
         </p>
         
-        <h2>Contact Us</h2>
-        <p>
-          If you have any questions about this privacy policy, please contact us at:
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Changes to This Privacy Policy</h2>
+        <p className="text-gray-700 mb-4">
+          We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
         </p>
-        <p className="ml-4">
-          Email: privacy@starbucksnutritionfinder.com<br />
-          Address: 123 Coffee Lane, Seattle, WA 98101
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Contact Us</h2>
+        <p className="text-gray-700 mb-4">
+          If you have any questions about this Privacy Policy, please contact us at:
+        </p>
+        <p className="text-gray-700 mb-2">
+          <strong>Email:</strong> privacy@starbucks-nutrition-calculator.com
+        </p>
+        <p className="text-gray-700 mb-2">
+          <strong>Website:</strong> starbucks-nutrition-calculator.com
         </p>
       </div>
     </div>

@@ -1,108 +1,75 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
-import { Separator } from "@/components/ui/separator";
+import { Separator } from '@/components/ui/separator';
 
 const TermsOfUse = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-3xl">
-      <div className="mb-6">
-        <Link 
-          to="/" 
-          className="inline-flex items-center text-starbucks-green hover:text-starbucks-light-green transition-colors mb-4"
-        >
-          <ArrowLeft size={16} className="mr-2" />
-          Back to Home
-        </Link>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Terms of Use</h1>
-        <p className="text-gray-600">Last updated: April 5, 2025</p>
-        <Separator className="my-4" />
-      </div>
-
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-3xl font-bold text-gray-900 mb-4">Terms of Use</h1>
+      <p className="text-gray-600 mb-6">Last updated: April 6, 2025</p>
+      
+      <Separator className="mb-6" />
+      
       <div className="prose prose-green max-w-none">
-        <h2>Acceptance of Terms</h2>
-        <p>
-          By accessing and using the Starbucks Nutrition Finder website, you accept and agree to be bound by the terms
-          and provision of this agreement. If you do not agree to abide by these terms, please do not use this website.
+        <p className="text-gray-700 mb-4">
+          Welcome to Starbucks Nutrition Calculator. By accessing or using our website, you agree to be bound by these Terms of Use.
         </p>
-
-        <h2>Website Use</h2>
-        <p>
-          The content of this website is for your general information and use only. It is subject to change without notice.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Use of the Service</h2>
+        <p className="text-gray-700 mb-4">
+          The Starbucks Nutrition Calculator is provided for informational purposes only. You may use our service for personal, non-commercial purposes. You agree not to:
         </p>
-        <p>
-          This website uses cookies to monitor browsing preferences. If you allow cookies to be used, personal
-          information may be stored by us for use by third parties as described in our Privacy Policy.
+        <ul className="list-disc pl-6 mb-4 text-gray-700">
+          <li>Use the service in any way that could damage or overburden it</li>
+          <li>Attempt to gain unauthorized access to any part of the service</li>
+          <li>Use the service for any illegal or unauthorized purpose</li>
+          <li>Copy, modify, or create derivative works of the service or its content</li>
+        </ul>
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Intellectual Property</h2>
+        <p className="text-gray-700 mb-4">
+          All content, features, and functionality of our website, including text, graphics, logos, and software, are owned by Starbucks Nutrition Calculator and are protected by intellectual property laws. You may not reproduce, distribute, modify, or create derivative works of our content without explicit permission.
         </p>
-        <p>
-          Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, 
-          completeness, or suitability of the information and materials found or offered on this website for any particular purpose. 
-          You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude 
-          liability for any such inaccuracies or errors to the fullest extent permitted by law.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Disclaimer</h2>
+        <p className="text-gray-700 mb-4">
+          The information provided by our nutrition calculator is based on publicly available data and may not be completely accurate or up-to-date. We do not guarantee the accuracy, completeness, or reliability of any information on our website. The nutrition calculator is not a substitute for professional dietary advice.
         </p>
-
-        <h2>Non-Affiliation with Starbucks</h2>
-        <p>
-          Starbucks Nutrition Finder is not affiliated with, endorsed by, or connected to Starbucks Corporation. 
-          All Starbucks product names, logos, and brands are property of Starbucks Corporation. 
-          All company, product, and service names used on this website are for identification purposes only.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Limitation of Liability</h2>
+        <p className="text-gray-700 mb-4">
+          To the fullest extent permitted by applicable law, Starbucks Nutrition Calculator shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:
         </p>
-
-        <h2>Nutritional Information Disclaimer</h2>
-        <p>
-          The nutritional information provided on this website is based on publicly available data and may not reflect
-          the most current information available from Starbucks Corporation. Starbucks menu items and ingredients may vary
-          by location and may change over time. For the most accurate and up-to-date nutritional information, please refer
-          to the official Starbucks website or consult with Starbucks staff.
+        <ul className="list-disc pl-6 mb-4 text-gray-700">
+          <li>Your use of or inability to use our service</li>
+          <li>Any unauthorized access to or use of our servers or personal information</li>
+          <li>Any errors or inaccuracies in our content</li>
+        </ul>
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Third-Party Links</h2>
+        <p className="text-gray-700 mb-4">
+          Our website may contain links to third-party websites or services not owned or controlled by Starbucks Nutrition Calculator. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services.
         </p>
-
-        <h2>Intellectual Property</h2>
-        <p>
-          This website contains material which is owned by or licensed to us. This material includes, but is not limited to,
-          the design, layout, look, appearance, and graphics. Reproduction is prohibited other than in accordance with the
-          copyright notice, which forms part of these terms and conditions.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Governing Law</h2>
+        <p className="text-gray-700 mb-4">
+          These Terms shall be governed by the laws of the United States without regard to its conflict of law provisions. Any disputes relating to these Terms shall be subject to the exclusive jurisdiction of the courts in the United States.
         </p>
-        <p>
-          All trademarks reproduced on this website, which are not the property of, or licensed to the operator, are
-          acknowledged on the website.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Changes to Terms</h2>
+        <p className="text-gray-700 mb-4">
+          We reserve the right to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect. By continuing to access or use our service after those revisions become effective, you agree to be bound by the revised terms.
         </p>
-
-        <h2>Links to Other Websites</h2>
-        <p>
-          Our website may contain links to other websites of interest. However, once you have used these links to leave our site,
-          you should note that we do not have any control over that other website. Therefore, we cannot be responsible for the
-          protection and privacy of any information which you provide while visiting such sites and such sites are not governed
-          by this privacy statement. You should exercise caution and look at the privacy statement applicable to the website in question.
+        
+        <h2 className="text-xl font-semibold text-gray-800 mt-6 mb-3">Contact Us</h2>
+        <p className="text-gray-700 mb-4">
+          If you have any questions about these Terms, please contact us at:
         </p>
-
-        <h2>Limitation of Liability</h2>
-        <p>
-          Your use of this website and any information contained on it is entirely at your own risk, for which we shall not be liable.
-          It shall be your own responsibility to ensure that any products, services, or information available through this website
-          meet your specific requirements.
+        <p className="text-gray-700 mb-2">
+          <strong>Email:</strong> terms@starbucks-nutrition-calculator.com
         </p>
-
-        <h2>Governing Law</h2>
-        <p>
-          These terms and conditions are governed by and construed in accordance with the laws of the United States of America.
-          Any disputes relating to these terms and conditions shall be subject to the exclusive jurisdiction of the courts of the
-          United States of America.
-        </p>
-
-        <h2>Changes to Terms</h2>
-        <p>
-          We reserve the right to revise these terms of use at any time without notice. By using this website, you are agreeing to be
-          bound by the then current version of these terms and conditions.
-        </p>
-
-        <h2>Contact Us</h2>
-        <p>
-          If you have any questions about these Terms of Use, please contact us at:
-        </p>
-        <p className="ml-4">
-          Email: terms@starbucksnutritionfinder.com<br />
-          Address: 123 Coffee Lane, Seattle, WA 98101
+        <p className="text-gray-700 mb-2">
+          <strong>Website:</strong> starbucks-nutrition-calculator.com
         </p>
       </div>
     </div>
