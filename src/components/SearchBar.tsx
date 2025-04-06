@@ -4,7 +4,7 @@ import { Search, X } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { MenuItem } from '../types/menu';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 interface SearchBarProps {
   items: MenuItem[];
@@ -15,6 +15,8 @@ const SearchBar: React.FC<SearchBarProps> = ({ items, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
+  const isHashRouter = location.pathname.startsWith('/#/');
 
   const filteredItems = items
     .filter(item => item.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
